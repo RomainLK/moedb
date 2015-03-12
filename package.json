@@ -14,7 +14,7 @@
     "gulp-imagemin": "^1.0.1",
     "gulp-jade": "0.8.0",
     "gulp-jshint": "^1.8.4",
-    "gulp-less": "1.3.6",
+    "gulp-less": "3.0.1",
     "gulp-linker": "^0.1.7",
     "gulp-livereload": "^2.1.0",
     "gulp-load-plugins": "^0.6.0",
@@ -48,7 +48,7 @@
     "type": "git",
     "url": "git://github.com/merun/moedb.git"
   },
-  "engine": {
+  "engines": {
     "iojs" : "1.5.0"
   },
   "author": "merun",
