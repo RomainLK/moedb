@@ -2,7 +2,7 @@ module.exports = function (gulp, plugins) {
 	gulp.task('build', function (cb) {
 		plugins.sequence(
 			'compileAssets',
-			'linkAssetsBuild',
+			'linkAssets',
 			'clean:build',
 			'copy:build',
 			cb
