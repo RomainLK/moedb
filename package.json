@@ -39,7 +39,7 @@
   "description": "a Sails application",
   "keywords": [],
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "postinstall": "./node_modules/bower/bin/bower install && gulp",
     "start": "sails lift",
     "debug": "node debug app.js"
   },
