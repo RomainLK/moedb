@@ -7,6 +7,8 @@ module.exports = function (gulp, plugins) {
       'copy:dev',
       'coffee:dev',
       'html2js:dev',
+      'bower:install',
+      'bower:copy',
       cb
     );
   });
