@@ -1,1 +1,1 @@
-web: sails lift --verbose
+web: node app.js

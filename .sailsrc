@@ -9,7 +9,6 @@
       "new": "sails-generate-new-gulp",
       "frontend": "sails-generate-frontend-gulp",
       "backend": "sails-generate-backend-gulp",
-      "gulpfile": "sails-generate-gulpfile",
       "angular": "sails-generate-angular-gulp"
     }
   }

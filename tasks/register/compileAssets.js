@@ -4,10 +4,8 @@ module.exports = function (gulp, plugins) {
       'clean:dev',
       'bower:install',
       'bower:copy',
-      'jst:dev',
       'less:dev',
       'copy:dev',
-      'coffee:dev',
       'html2js:dev',
       cb
     );

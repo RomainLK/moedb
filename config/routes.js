@@ -31,7 +31,7 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-'/': 'HomeController.index'
+//'/': 'HomeController.index'
   // '/': {
   //   view: 'homepage'
   // },
