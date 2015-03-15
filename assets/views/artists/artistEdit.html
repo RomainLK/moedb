@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h1>Edit an artist</h1>
+</div>
+<form class="form-horizontal" ng-submit="artist.$save()">
+  <moe-form-row label="Name">
+    <input type="text" class="form-control" ng-model="artist.name">
+  </moe-form-row>
+  <moe-form-row label="Romanji">
+    <input type="text" class="form-control" ng-model="artist.romanji">
+  </moe-form-row>
+  <moe-form-row label="Pixiv Id">
+    <input type="number" class="form-control" ng-model="artist.pixivId">
+  </moe-form-row>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Save</button>
+    </div>
+  </div>
+</form>

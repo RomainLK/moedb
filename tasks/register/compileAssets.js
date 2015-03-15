@@ -7,6 +7,7 @@ module.exports = function (gulp, plugins) {
       'less:dev',
       'copy:dev',
       'html2js:dev',
+      //'babel:dev',
       cb
     );
   });

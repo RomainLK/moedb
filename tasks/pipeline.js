@@ -24,30 +24,31 @@ var cssFilesToInject = [
 var jsFilesToInject = [
 
   // Load sails.io before everything else
-  'js/dependencies/sails.io.js',
+  //'js/dependencies/sails.io.js',
+    
+  'vendor/jquery/dist/jquery.js',
+  'vendor/lodash/lodash.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
   'vendor/angular/angular.js',
-  'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
-  'vendor/angular-ui-router/release/angular-ui-router.min.js',
-  'vendor/angular-ui-utils/ui-utils.min.js',
-  'vendor/angular-sails/dist/angular-sails.min.js',
-  'vendor/lodash/dist/lodash.min.js',
-  'vendor/moment/moment-locales.min.js',
-  'vendor/angular-moment/angular-moment.min.js',
-  'vendor/angular-translate/angular-translate.min.js',
-  'vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
-  'vendor/ng-table/ng-table.js',
-  'vendor/jquery/dist/jquery.min.js',
-  'vendor/bootstrap/dist/js/bootstrap.min.js',
-  'vendor/**/*.js',
-  'src/**/*.js',
-  'templates.js',
+  'vendor/angular-bootstrap/ui-bootstrap-tpls.js',
+  'vendor/angular*/angular-*.js',
+  //'vendor/angular-sails/dist/angular-sails.min.js',
 
+  //'vendor/moment/moment-locales.min.js',
+  //'vendor/angular-moment/angular-moment.min.js',
+  //'vendor/angular-translate/angular-translate.min.js',
+  //'vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
+  //'vendor/ng-table/ng-table.js',
+
+  //'vendor/bootstrap/dist/js/bootstrap.min.js',
+  //'vendor/**/*.js',
+  'components/**/*.js',
+  'views/**/*.js',
+  'templates.js',
+  'app.js',
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
 ];
 
 
@@ -66,7 +67,7 @@ var templateFilesToInject = [
 
 var ngTemplateFilesToInject = [
   'templates/**/*.html',
-  'src/app/**/*.html',
+  'views/**/*.html',
 ];
 
 // Prefix relative paths to source files so they point to the proper locations

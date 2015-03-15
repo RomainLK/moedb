@@ -11,20 +11,25 @@
  *
  */
 module.exports = function(gulp, plugins, growl) {
-	var server = plugins.livereload();
+	var livereload = plugins.livereload;
+	livereload({ start: true });
 	gulp.task('watch:api', function() {
 		// Watch Style files
 		return gulp.watch('api/**/*', ['syncAssets'])
 				.on('change', function(file) {
-					server.changed(file.path);
+					
+					livereload.changed(file.path);
 				});
 	});
 	
 	gulp.task('watch:assets', function() {
 		// Watch assets
-		return gulp.watch(['assets/**/*', 'tasks/pipeline.js'], ['syncAssets'])
+		return gulp.watch(['assets/**/*'], ['syncAssets'])
 				.on('change', function(file) {
-					server.changed(file.path);
+					livereload.changed(file.path);
+				})
+				.on('error', function(error){
+					console.log(error.toString());
 				});
 	});
 
