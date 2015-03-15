@@ -10,9 +10,9 @@ angular.module('formDirectives', [])
     templateUrl: 'components/form/formRow.html',
     link: function(scope, element, attrs, ctrl, transclude){
       transclude(function(clone){
-        var input = clone.find('input').eq(0).attr('id');
+        var input = clone.find('input,select').eq(0).attr('id');
         if(!input){
-          input = clone.filter('input');
+          input = clone.filter('input,select');
         }
         var id = autoId;
         var inputId = input.attr('id');

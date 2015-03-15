@@ -74,11 +74,10 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  moedb: {
+  moedbpg: {
     adapter: 'sails-postgresql',
     host: 'localhost',
     user: 'moedb',
-    password: 'moemoe',
     database: 'moedb'
   }
 
