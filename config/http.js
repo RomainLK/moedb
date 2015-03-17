@@ -47,7 +47,7 @@ module.exports.http = {
     //   '404',
     //   '500'
     // ],
-
+  //passport: require("passport").initialize(),
   /****************************************************************************
   *                                                                           *
   * Example custom middleware; logs each request to the console.              *
@@ -59,7 +59,7 @@ module.exports.http = {
     //     return next();
     // }
 
-
+  
   /***************************************************************************
   *                                                                          *
   * The body parser that will handle incoming multipart HTTP requests. By    *

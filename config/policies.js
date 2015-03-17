@@ -18,7 +18,7 @@
 
 
 module.exports.policies = {
-
+	'*': [ 'passport', /* your auth dependant policies go here */ ]
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *
