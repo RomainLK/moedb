@@ -9,8 +9,7 @@ module.exports = {
 
   attributes: {
     name: { type: 'string' },
-    edit : { type: 'array' },
-    create : { type: 'array' },
+    write : { type: 'array' },
     delete : { type: 'array' },
     read : { type: 'array' }
   }

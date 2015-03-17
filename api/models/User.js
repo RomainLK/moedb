@@ -6,7 +6,8 @@ var User = {
     username  : { type: 'string', unique: true },
     email     : { type: 'email',  unique: true },
     passports : { collection: 'Passport', via: 'user' },
-    role : { collection: 'Role', via: 'name' }
+    role : { collection: 'Role', via: 'name' },
+    apiToken : { collection: 'ApiToken', via: 'user' }
   }
 };
 

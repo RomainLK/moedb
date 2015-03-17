@@ -21,8 +21,52 @@ module.exports = {
     romanji: {
       type: 'string'
     },
+    
+    alternative: {
+      type:'array'
+    },
+    
     details: {
       type: 'json'
+    },
+    
+    createdBy : {
+      model: 'User'
+    },
+    
+    updatedBy : {
+      model: 'User'
+    },
+    
+    wiki: {
+      type: 'string'
+    },
+    
+    site: {
+      type: 'array'
+    },
+    
+    twitterHandle: {
+      type: 'string'
+    },
+    
+    circleWebCatalog: {
+      type: 'string'
+    },
+    
+    circles: {
+      collection: 'Circles',
+      via: 'members',
+      dominant: true
+    },
+    
+    
+    misc: {
+      type:'string'
+    },
+    
+    works: {
+      type:'string'
     }
     // _pixivHitNumber: {
     //   type: Number,

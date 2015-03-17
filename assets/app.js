@@ -6,6 +6,7 @@ angular.module('moedb', [
   'ngMessages',
   'ui.bootstrap',
   'templates-app',
+  'moeResource',
   'Artists'
   ]).config(function($routeProvider){
   });
